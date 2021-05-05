@@ -1,0 +1,7 @@
+My initial plan is to use a Laravel backend and Vue.js for the frontend to create a Single Page Application that will render the necessary turbines using an Axios call to get the information from the backend.
+
+ The dilemma I have at the moment is whether I want to build this out as a more re-usable thing with being able to update each turbine status or just do a simple fizz buzz code and return these with through the controller and render them. Ideally I want to create an inital inspectTurbines which returns the fizz buzz result, but also add options to update each turbine status.
+
+ I've created the frontend which is using Vue.js and it uses an Axios call to trigger the database to get the list of the turbine parts that need to be fixed. I've created API routes that would make this project be able to usual CRUD operations to update each part individually. 
+
+ Deployed using Terraform onto AWS. My Bootstrap script was missing a few steps that I had done manually after provisioning the instance and I adjusted the code to fix these, however these were not fully tested. Ideally the code deployment would be done using some sort of a pipeline from Gitlab or Jenkis. 
